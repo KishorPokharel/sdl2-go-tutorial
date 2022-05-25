@@ -1,4 +1,4 @@
-module lesson1
+module github.com/KishorPokharel/sdl2-go-tutorial
 
 go 1.18
 
