@@ -41,13 +41,13 @@ func run() error {
 			case *sdl.KeyboardEvent:
 				if t.Type == sdl.KEYDOWN {
 					switch t.Keysym.Sym {
-					case sdl.K_UP:
+					case sdl.K_UP, sdl.K_k:
 						y = y - 10
-					case sdl.K_DOWN:
+					case sdl.K_DOWN, sdl.K_j:
 						y = y + 10
-					case sdl.K_RIGHT:
+					case sdl.K_RIGHT, sdl.K_l:
 						x = x + 10
-					case sdl.K_LEFT:
+					case sdl.K_LEFT, sdl.K_h:
 						x = x - 10
 					}
 				}
